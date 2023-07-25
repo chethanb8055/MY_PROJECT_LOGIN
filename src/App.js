@@ -44,7 +44,7 @@ const App = () => {
 
             <PrivateRoute isLogIn={isLogin} >
 
-              <Home setCourses ={setCourses} />
+              <Home />
             </PrivateRoute>
           }
           />

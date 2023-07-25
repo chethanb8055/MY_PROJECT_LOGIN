@@ -7,7 +7,7 @@ import useHook from '../CustomHook/useHook';
 
 const Login = ({setIslogIn}) => {
  
-  const {formData,showPassword,showConfirmPassword,setShowConfirmPassword,navigate,changeHandler} =useHook("login")  
+  const {formData,showPassword,setShowPassword,navigate,changeHandler} =useHook("login")  
 
 
 // console.log(formData)
@@ -58,10 +58,10 @@ const Login = ({setIslogIn}) => {
             className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
           />
           <span
-              onClick={() => setShowConfirmPassword((prev) => !prev)}
+              onClick={() => setShowPassword((prev) => !prev)}
               className="absolute right-3 top-[37px] cursor-pointer"
             >
-              {showConfirmPassword ? (
+              {showPassword? (
                 <AiOutlineEyeInvisible fontSize={20} fill="#AFB2BF" />
               ) : (
                 <AiOutlineEye fontSize={20} fill="#AFB2BF" />
