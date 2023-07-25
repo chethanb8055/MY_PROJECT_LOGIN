@@ -1,13 +1,13 @@
 // import React from 'react'
 
-import CoursesCards from "../components/CoursesCards"
+
 // import {data} from "../data"
 // import { useState } from "react"
 
 const Home = () => {
   return (
     <div>
-        <CoursesCards />
+        <h1>chethan</h1>
     </div>
   )
 }
